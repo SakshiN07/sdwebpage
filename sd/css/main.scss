@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root{
+    --primary-color:rgba(86, 56, 110, 0.842);
+}
+
+body {
+    background: #F2F2F2;
+    margin: 0;
+    font-family: 'Poppins';
+
+}
+.navbar{
+    background:white;
+    padding: 1em;
+
+    .logo{
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.5em;
+
+        span{
+            color:var(--primary-color);
+
+        }
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container{
+        display: flex;
+        place-content: space-between;
+    }
+}
+
+a {
+    color: #373636;
+    font-size: 3em;
+    
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+.hero{
+    
+    text-align: center;
+    height: 400px;
+    
+}
+
+.overlay{
+    height: 425px;
+    width: 100% 100%;
+    background-image: url('../img/Restaurant_Näsinneula.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin-top: 0em;
+
+    
+
+    .subhead{
+        
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        font-size: 2em;
+        letter-spacing: 0em;
+    }
+
+    h1{
+        font-size: 2.5em;
+        color: white;
+        line-height: 1.3em;
+        margin-top: 4em;
+    }
+
+    .primary-cta{
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.4em;
+        border-radius: 5em;
+        font-weight: bold;
+        display: inline-block;
+
+        &:hover {
+            background: white;
+            color: var(--primary-color);
+
+        }
+    }
+}
+
+.contact-section{
+    background: #20272E;
+    color: white;
+    
+
+    .contact-left{
+
+        margin:0;
+        padding-left: .1em;
+    h2{
+        font-size: 1.5em;
+        color: rgb(130, 96, 169);
+    }
+    h3{
+        font-size: 1.0em;
+        color: white;
+    }
+    }
+
+    .contact-middle{
+        padding-left: 0.1em;
+        margin:0 auto;
+        
+
+    h2{
+        font-size: 1.5em;
+        color: rgb(130, 96, 169);
+    }
+    h3{
+        font-size: 1.0em;
+        color: white;
+    }
+
+    }
+
+    .contact-right{
+        padding-right: 0.1em;;
+        margin: 0 auto;
+        
+        
+    h2{
+        font-size: 1.5em;
+        color: rgb(130, 96, 169);
+    }
+    h3{
+        font-size: 1.0em;
+        color: white;
+    }
+
+    }
+}
+
+
+.navbar .container{
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+        
+        
+}
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+    ul{
+        display: flex;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+        font-size: 1em;
+        margin-left: 1em;
+        padding: .3em 2em;
+
+    }
+    ul.primary-nav{
+        margin: 0;
+    }
+    li.current a{
+        font-weight: bold;
+    }
+    li.go-premium-cta a{
+        color:var(--primary-color);
+        border: 3px solid var(--primary-color);
+        font-weight: bold;
+        border-radius: 5em;
+        margin-top: -.2em;
+
+        &:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+    }
+}
+
+table{
+    width:400px;
+
+}
+th {
+    text-align: left;
+
+}
+
+table,th,td {
+    border: 1px solid #000;
+
+}
+
